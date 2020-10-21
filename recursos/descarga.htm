@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+            <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+            <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+            <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+            <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+            <head><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<link rel="shortcut icon" href="/themes/Mirage2/images/favicon.ico">
+<link rel="apple-touch-icon" href="/themes/Mirage2/images/apple-touch-icon.png">
+<meta name="Generator" content="DSpace6.3">
+<link href="/themes/Mirage2/styles/main.css" rel="stylesheet">
+<link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" type="text/css" rel="stylesheet">
+<link href="https://cdn.datatables.net/select/1.2.5/css/select.dataTables.min.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="https://framework-gb.cdn.gob.mx/assets/styles/main.css">
+<script src="https://framework-gb.cdn.gob.mx/gobmx.js"></script>
+<link type="application/rss+xml" rel="alternate" href="/feed/rss_1.0/site">
+<link type="application/rss+xml" rel="alternate" href="/feed/rss_2.0/site">
+<link type="application/atom+xml" rel="alternate" href="/feed/atom_1.0/site">
+<link type="application/opensearchdescription+xml" rel="search" href="https://repositorio.cinvestav.mx:443/open-search/description.xml" title="DSpace">
+<script>
+                //Clear default text of empty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ' '){element.value='';}
+                }
+                //Clear default text of empty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ' '){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            
+            </script><!--[if lt IE 9]>
+                <script src="/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/themes/Mirage2/vendor/respond/dest/respond.min.js"> </script>
+                <![endif]--><script src="/themes/Mirage2/vendor/modernizr/modernizr.js"> </script>
+<title>Repositorio CINVESTAV</title>
+</head><body>
+<header>
+<div role="navigation" class="navbar navbar-default navbar-static-top">
+<div style="padding-left: 0px;" class="container-fluid">
+<div class="row">
+<div class="col-xs-12 col-sm-8 ">
+<img src="/themes/Mirage2/images/logo.png" class="img-responsive"></div>
+<div class="col-xs-12 col-sm-4 ">
+<div class="row">
+<div class="navbar-header">
+<button data-toggle="offcanvas" class="navbar-toggle" type="button"><span class="sr-only">Cambiar navegaci&oacute;n</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left ">
+<li class="dropdown" id="ds-language-selection-xs">
+<button data-toggle="dropdown" class="dropdown-toggle navbar-toggle navbar-link" role="button" href="#" id="language-dropdown-toggle-xs"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul data-no-collapse="true" aria-labelledby="language-dropdown-toggle-xs" role="menu" class="dropdown-menu pull-right">
+<li role="presentation" class="disabled">
+<a href="https://repositorio.cinvestav.mx:443/?locale-attribute=es">espa&ntilde;ol</a>
+</li>
+<li role="presentation">
+<a href="https://repositorio.cinvestav.mx:443/?locale-attribute=en">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form method="get" action="/login" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+<li>
+<a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+</li>
+<li>
+<a href="https://www.facebook.com/ " target="_blank"><i class="fa fa-facebook-f"></i></a>
+</li>
+<li>
+<a href="https://instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<ul class="nav navbar-nav pull-left">
+<li class="dropdown" id="ds-language-selection">
+<a data-toggle="dropdown" class="dropdown-toggle" role="button" href="#" id="language-dropdown-toggle"><span class="hidden-xs">espa&ntilde;ol&nbsp;<b class="caret"></b></span></a>
+<ul data-no-collapse="true" aria-labelledby="language-dropdown-toggle" role="menu" class="dropdown-menu pull-right">
+<li role="presentation" class="disabled">
+<a href="?locale-attribute=es">espa&ntilde;ol</a>
+</li>
+<li role="presentation">
+<a href="?locale-attribute=en">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-left">
+<li>
+<a href="/login"><i class="fa fa-user"></i> <span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-left">
+<li>
+<a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-left ">
+<li>
+<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-f"></i></a>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-left">
+<li>
+<a href="https://instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+</li>
+</ul>
+<button type="button" class="navbar-toggle visible-sm" data-toggle="offcanvas"><span class="sr-only">Cambiar navegaci&oacute;n</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+<div class="row">
+<div class="">
+<ul class="">
+<div class="ds-option-set" id="ds-search-option">
+<form method="post" class="" id="ds-search-form" action="/discover">
+<fieldset>
+<div class="input-group">
+<input style="border: 1px solid #009f94;" placeholder="B&uacute;squedas" type="text" class="ds-text-field form-control" name="query"><span class="input-group-btn"><button title="Ir" class="ds-button-field btn btn-primary"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+</fieldset>
+</form>
+</div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<ul class="breadcrumb">
+<li>
+<i style="color:#000" aria-hidden="true" class="glyphicon glyphicon-home"></i>&nbsp;
+            
+            Repositorio CINVESTAV</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-right">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div data-ride="carousel" class="carousel slide" id="cartaCarousel">
+<div class="carousel-inner2">
+<div class="item active">
+<div class="carousel-caption2">
+<a href="/handle/cinvestav/1">
+<h3>Unidad CDMX</h3>
+</a>
+<p>Centro de Investigaci&oacute;n y de Estudios Avanzados del IPN </p>
+</div>
+<a href="/handle/cinvestav/1"><img align="middle" alt="Rectoria" src="/themes/Mirage2/images/sede1.jpg"></a>
+</div>
+<div class="item">
+<div class="carousel-caption2">
+<h3>Unidad Monterrey</h3>
+<p>Centro de Investigaci&oacute;n y de Estudios Avanzados del IPN </p>
+</div>
+<img alt="Rectoria" src="/themes/Mirage2/images/sede2.jpg"></div>
+<div class="item">
+<div class="carousel-caption2">
+<h3>Unidad Quer&eacute;taro</h3>
+<p>Centro de Investigaci&oacute;n y de Estudios Avanzados del IPN </p>
+</div>
+<img alt="Rectoria" src="/themes/Mirage2/images/sede3.jpg"></div>
+<div class="item">
+<div class="carousel-caption2">
+<h3>Unidad Irapuato</h3>
+<p>Centro de Investigaci&oacute;n y de Estudios Avanzados del IPN </p>
+</div>
+<img alt="Rectoria" src="/themes/Mirage2/images/sede4.jpg"></div>
+<div class="item">
+<div class="carousel-caption2">
+<h3>Unidad Merida</h3>
+<p>Centro de Investigaci&oacute;n y de Estudios Avanzados del IPN </p>
+</div>
+<img alt="Rectoria" src="/themes/Mirage2/images/sede5.jpg"></div>
+</div>
+<ol class="carousel-indicators">
+<li class="active" data-slide-to="0" data-target="#cartaCarousel"></li>
+<li data-slide-to="1" data-target="#cartaCarousel"></li>
+<li data-slide-to="2" data-target="#cartaCarousel"></li>
+<li data-slide-to="3" data-target="#cartaCarousel"></li>
+<li data-slide-to="4" data-target="#cartaCarousel"></li>
+</ol>
+<a data-slide="prev" href="#cartaCarousel" class="left carousel-control"><span class="glyphicon glyphicon-chevron-left"></span><span class="sr-only">Previous</span></a><a data-slide="next" href="#cartaCarousel" class="right carousel-control"><span class="glyphicon glyphicon-chevron-right"></span><span class="sr-only">Next</span></a>
+</div>
+<style>
+                                                
+                                                .thumbnail:hover{
+                                                    -moz-box-shadow: 0 0 10px #ccc; 
+                                                    -webkit-box-shadow: 0 0 10px #ccc; 
+                                                    box-shadow: 5px 5px 10px #ccc; 
+                                                }
+												.item {text-align:center;}
+                                               img {max-height: 150px;text-align:center;
+											    margin-left: auto!important; margin-right: auto!important;}
+                                            .carousel-indicators {bottom: -20px;}
+                                            </style>
+<div>
+<div id="file_news_div_news" class="ds-static-div primary"></div>
+
+<h2 class="ds-div-head page-header first-page-header">Comunidades en RI CINVESTAV</h2>
+<div id="aspect_artifactbrowser_CommunityBrowser_div_comunity-browser" class="ds-static-div primary">
+<p class="ds-paragraph">Elija una comunidad para listar sus colecciones</p>
+<div id="aspect_artifactbrowser_CommunityBrowser_referenceSet_community-browser" class="ds-static-div community-browser-wrapper">
+<div class="ds-static-div row community-browser-row">
+<div class="ds-static-div col-xs-10 col-sm-12 col-sm-offset-0 list-mode">
+<a href="/handle/cinvestav/1" name="community-browser-link">Cinvestav-CDMX ZACATENCO</a> [484]</div>
+</div>
+<div class="ds-static-div row community-browser-row odd-community-browser-row">
+<div class="ds-static-div col-xs-10 col-sm-12 col-sm-offset-0 list-mode">
+<a href="/handle/cinvestav/23" name="community-browser-link">Cinvestav-GUADALAJARA</a> [766]</div>
+</div>
+<div class="ds-static-div row community-browser-row">
+<div class="ds-static-div col-xs-10 col-sm-12 col-sm-offset-0 list-mode">
+<a href="/handle/cinvestav/29" name="community-browser-link">Cinvestav-IRAPUATO</a> [0]</div>
+</div>
+<div class="ds-static-div row community-browser-row odd-community-browser-row">
+<div class="ds-static-div col-xs-10 col-sm-12 col-sm-offset-0 list-mode">
+<a href="/handle/cinvestav/32" name="community-browser-link">Cinvestav-irapuato/LANGEBIO-Laboratorio Nacional de Gen&oacute;mica para la Biodiversidad</a> [174]</div>
+</div>
+<div class="ds-static-div row community-browser-row">
+<div class="ds-static-div col-xs-10 col-sm-12 col-sm-offset-0 list-mode">
+<a href="/handle/cinvestav/35" name="community-browser-link">Cinvestav-M&Eacute;RIDA</a> [38]</div>
+</div>
+<div class="ds-static-div row community-browser-row odd-community-browser-row">
+<div class="ds-static-div col-xs-10 col-sm-12 col-sm-offset-0 list-mode">
+<a href="/handle/cinvestav/39" name="community-browser-link">Cinvestav-MONTERREY</a> [0]</div>
+</div>
+<div class="ds-static-div row community-browser-row">
+<div class="ds-static-div col-xs-10 col-sm-12 col-sm-offset-0 list-mode">
+<a href="/handle/cinvestav/42" name="community-browser-link">Cinvestav-QUER&Eacute;TARO</a> [0]</div>
+</div>
+<div class="ds-static-div row community-browser-row odd-community-browser-row">
+<div class="ds-static-div col-xs-10 col-sm-12 col-sm-offset-0 list-mode">
+<a href="/handle/cinvestav/45" name="community-browser-link">Cinvestav-SALTILLO</a> [0]</div>
+</div>
+<div class="ds-static-div row community-browser-row">
+<div class="ds-static-div col-xs-10 col-sm-12 col-sm-offset-0 list-mode">
+<a href="/handle/cinvestav/50" name="community-browser-link">Cinvestav-SEDE SUR</a> [0]</div>
+</div>
+<div class="ds-static-div row community-browser-row odd-community-browser-row">
+<div class="ds-static-div col-xs-10 col-sm-12 col-sm-offset-0 list-mode">
+<a href="/handle/cinvestav/53" name="community-browser-link">Cinvestav-TAMAULIPAS</a> [94]</div>
+</div>
+<div class="ds-static-div row community-browser-row">
+<div class="ds-static-div col-xs-10 col-sm-12 col-sm-offset-0 list-mode">
+<a href="/handle/cinvestav/18" name="community-browser-link">Cinvestav-Zacatenco/PROGRAMAS MULTIDISCIPLINARIOS</a> [32]</div>
+</div>
+</div>
+</div>
+<div id="aspect_discovery_SiteRecentSubmissions_div_site-home" class="ds-static-div primary repository">
+<h2 class="ds-div-head page-header">A&ntilde;adido Recientemente</h2>
+<div id="aspect_discovery_SiteRecentSubmissions_div_site-recent-submission" class="ds-static-div secondary recent-submission">
+<ul class="ds-artifact-list list-unstyled">
+<!-- External Metadata URL: cocoon://metadata/handle/cinvestav/1675/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item odd">
+<div class="artifact-description">
+<h4 class="artifact-title">
+<a href="/handle/cinvestav/1675">Efecto de los neuroqu&iacute;micos del bulbo olfatorio sobre los trofozo&iacute;tos de Naegleria fowleri</a><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=https%3A%2F%2Frepositorio.cinvestav.mx%2Fhandle%2Fcinvestav%2F1675&amp;rft_id=%23N%2FD&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</h4>
+<div class="artifact-info">
+<span class="author h4"><small><span>Guzm&aacute;n T&eacute;llez, Paula Gabriela</span></small></span> <span class="publisher-date h4"><small>(<span class="publisher">Tesis (M.C.)--Centro de Investigaci&oacute;n y de Estudios Avanzados del I.P.N. Departamento de Infect&oacute;mica y Patog&eacute;nesis Molecular.</span>, <span class="date">2015</span>)</small></span>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/cinvestav/1674/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item even">
+<div class="artifact-description">
+<h4 class="artifact-title">
+<a href="/handle/cinvestav/1674">Efecto de la deficiencia de cortactina en las uniones intercelulares del p&aacute;ncreas</a><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=https%3A%2F%2Frepositorio.cinvestav.mx%2Fhandle%2Fcinvestav%2F1674&amp;rft_id=%23N%2FD&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</h4>
+<div class="artifact-info">
+<span class="author h4"><small><span>Samaniego Burneo, Fabiana</span></small></span> <span class="publisher-date h4"><small>(<span class="publisher">Tesis (M.C.)--Centro de Investigaci&oacute;n y de Estudios Avanzados del I.P.N. Departamento de Infect&oacute;mica y Patog&eacute;nesis Molecular.</span>, <span class="date">2019</span>)</small></span>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/cinvestav/1673/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item odd">
+<div class="artifact-description">
+<h4 class="artifact-title">
+<a href="/handle/cinvestav/1673">Caracterizaci&oacute;n funcional de la Ciste&iacute;na proteinasa TvCP2 de Trichomonas vaginalis</a><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=https%3A%2F%2Frepositorio.cinvestav.mx%2Fhandle%2Fcinvestav%2F1673&amp;rft_id=%23N%2FD&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</h4>
+<div class="artifact-info">
+<span class="author h4"><small><span>Rivera Rivas, Luis Alberto</span></small></span> <span class="publisher-date h4"><small>(<span class="publisher">Tesis (M.C.)--Centro de Investigaci&oacute;n y de Estudios Avanzados del I.P.N. Departamento de Infect&oacute;mica y Patog&eacute;nesis Molecular.</span>, <span class="date">2016</span>)</small></span>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/cinvestav/1672/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item even">
+<div class="artifact-description">
+<h4 class="artifact-title">
+<a href="/handle/cinvestav/1672">Efecto de la vacunaci&oacute;n con el ADN del gen LmxMBA en ratones contra la infecci&oacute;n por Leishmania major</a><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=https%3A%2F%2Frepositorio.cinvestav.mx%2Fhandle%2Fcinvestav%2F1672&amp;rft_id=%23N%2FD&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</h4>
+<div class="artifact-info">
+<span class="author h4"><small><span>Ramos L&oacute;pez, Dayana</span></small></span> <span class="publisher-date h4"><small>(<span class="publisher">Tesis (M.C.)--Centro de Investigaci&oacute;n y de Estudios Avanzados del I.P.N. Departamento de Infect&oacute;mica y Patog&eacute;nesis Molecular.</span>, <span class="date">2019</span>)</small></span>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/cinvestav/1671/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item odd">
+<div class="artifact-description">
+<h4 class="artifact-title">
+<a href="/handle/cinvestav/1671">Identificaci&oacute;n celular de las cofilinas codificadas por los genes EHI_164480 y HI_197480 en Entamoeba histolytica</a><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=https%3A%2F%2Frepositorio.cinvestav.mx%2Fhandle%2Fcinvestav%2F1671&amp;rft_id=%23N%2FD&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</h4>
+<div class="artifact-info">
+<span class="author h4"><small><span>Pastor Guti&eacute;rrez, Emilio</span></small></span> <span class="publisher-date h4"><small>(<span class="publisher">Tesis (M.C.)--Centro de Investigaci&oacute;n y de Estudios Avanzados del I.P.N. Departamento de Infect&oacute;mica y Patog&eacute;nesis Molecular.</span>, <span class="date">2019</span>)</small></span>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/cinvestav/1670/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item even">
+<div class="artifact-description">
+<h4 class="artifact-title">
+<a href="/handle/cinvestav/1670">Impacto de la simbiosis entre Mycoplasma hominis y Trichomonas vaginalis en la citotoxicidad dependiente de ciste&iacute;na proteinasas y del inhibidor end&oacute;geno TC-3</a><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=https%3A%2F%2Frepositorio.cinvestav.mx%2Fhandle%2Fcinvestav%2F1670&amp;rft_id=%23N%2FD&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</h4>
+<div class="artifact-info">
+<span class="author h4"><small><span>Euceda Padilla, Esly Alejandra</span></small></span> <span class="publisher-date h4"><small>(<span class="publisher">Tesis (M.C.)--Centro de Investigaci&oacute;n y de Estudios Avanzados del I.P.N. Departamento de Infect&oacute;mica y Patog&eacute;nesis Molecular.</span>, <span class="date">2020</span>)</small></span>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/cinvestav/1669/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item odd">
+<div class="artifact-description">
+<h4 class="artifact-title">
+<a href="/handle/cinvestav/1669">Transcriptional response of monarch butterfly caterpillar to different milkweeds = Genes involucrados en la especificidad de hospedero de la mariposa monarca</a><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=https%3A%2F%2Frepositorio.cinvestav.mx%2Fhandle%2Fcinvestav%2F1669&amp;rft_id=02234cam+a2200421+a+4500&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</h4>
+<div class="artifact-info">
+<span class="author h4"><small><span>Gonz&aacute;lez de la Rosa, Pablo Manuel</span></small></span> <span class="publisher-date h4"><small>(<span class="publisher">Tesis (M.C.)--Centro de Investigaci&oacute;n y de Estudios Avanzados del I.P.N. Unidad Irapuato. Laboratorio Nacional de Gen&oacute;mica para la Biodiversidad.</span>, <span class="date">2018</span>)</small></span>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/cinvestav/1668/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item even">
+<div class="artifact-description">
+<h4 class="artifact-title">
+<a href="/handle/cinvestav/1668">An&aacute;lisis de perfiles de metilaci&oacute;n en el paleogenoma de ma&iacute;z : implicaciones para el estudio de su adaptaci&oacute;n a cambios ambientales</a><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=https%3A%2F%2Frepositorio.cinvestav.mx%2Fhandle%2Fcinvestav%2F1668&amp;rft_id=02010cam+a2200397+a+4500&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</h4>
+<div class="artifact-info">
+<span class="author h4"><small><span>Garc&iacute;a Morales, Sara Edith</span></small></span> <span class="publisher-date h4"><small>(<span class="publisher">Tesis (M.C.)--Centro de Investigaci&oacute;n y de Estudios Avanzados del I.P.N. Unidad Irapuato. Laboratorio Nacional de Gen&oacute;mica para la Biodiversidad.</span>, <span class="date">2017</span>)</small></span>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/cinvestav/1667/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item odd">
+<div class="artifact-description">
+<h4 class="artifact-title">
+<a href="/handle/cinvestav/1667">Seed-transmitted bacteria and their contribution to the cacti holobiont =Endófitos transmitidos por semilla y su contrubución al holobionte de los cactus</a><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=https%3A%2F%2Frepositorio.cinvestav.mx%2Fhandle%2Fcinvestav%2F1667&amp;rft_id=01858cam+a2200385+a+4500&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</h4>
+<div class="artifact-info">
+<span class="author h4"><small><span>Flores N&uacute;&ntilde;ez, V&iacute;ctor Manuel</span></small></span> <span class="publisher-date h4"><small>(<span class="publisher">Tesis (M.C.)--Centro de Investigaci&oacute;n y de Estudios Avanzados del I.P.N. Unidad Irapuato. Departamento de Ingenier&iacute;a Gen&eacute;tica.</span>, <span class="date">2017</span>)</small></span>
+</div>
+</div>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/cinvestav/1666/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+<li class="ds-artifact-item even">
+<div class="artifact-description">
+<h4 class="artifact-title">
+<a href="/handle/cinvestav/1666">Systematic analysis of mitochondrial-auntophagy activity in yeast chronological-life span genetic factors =Análisis sistemático de la autofagia mitocondrial en factores genéticos determinantes de la esperanza de vida en levadura</a><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=https%3A%2F%2Frepositorio.cinvestav.mx%2Fhandle%2Fcinvestav%2F1666&amp;rft_id=02074cam+a2200385+a+4500&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                    ﻿ 
+                </span>
+</h4>
+<div class="artifact-info">
+<span class="author h4"><small><span>D&aacute;vila Alem&aacute;n, Francisco Daniel</span></small></span> <span class="publisher-date h4"><small>(<span class="publisher">Tesis (M.C.)--Centro de Investigaci&oacute;n y de Estudios Avanzados del I.P.N. Unidad Irapuato. Laboratorio Nacional de Gen&oacute;mica para la Biodiversidad.</span>, <span class="date">2017</span>)</small></span>
+</div>
+</div>
+</li>
+</ul>
+<p id="aspect_discovery_SiteRecentSubmissions_p_recent-submission-view-more" class="ds-paragraph recentSubmissionViewMore">
+<a href="/recent-submissions">M&aacute;s</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div role="navigation" id="sidebar" class="col-xs-6 col-sm-3 sidebar-offcanvas">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form method="post" class="" id="ds-search-form" action="/discover">
+<fieldset>
+<div class="input-group">
+<input placeholder="B&uacute;squedas" type="text" class="ds-text-field form-control" name="query"><span class="input-group-btn"><button title="Ir" class="ds-button-field btn btn-primary"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head  h6">Listar</h2>
+<div id="aspect_viewArtifacts_Navigation_list_browse" class="list-group">
+<a class="list-group-item active"><span class="h5 list-group-item-heading  h5">Todo RI CINVESTAV</span></a><a href="/community-list" class="list-group-item ds-option">Comunidades &amp; Colecciones</a><a href="/browse?type=dateissued" class="list-group-item ds-option">Por fecha de publicaci&oacute;n</a><a href="/browse?type=author" class="list-group-item ds-option">Autores</a><a href="/browse?type=title" class="list-group-item ds-option">T&iacute;tulos</a><a href="/browse?type=subject" class="list-group-item ds-option">Materias</a>
+</div>
+<h2 class="ds-option-set-head  h6">Mi cuenta</h2>
+<div id="aspect_viewArtifacts_Navigation_list_account" class="list-group">
+<a href="/login" class="list-group-item ds-option">Acceder</a><a href="/register" class="list-group-item ds-option">Registro</a>
+</div>
+<div id="aspect_viewArtifacts_Navigation_list_context" class="list-group"></div>
+<div id="aspect_viewArtifacts_Navigation_list_administrative" class="list-group"></div>
+<h2 class="ds-option-set-head  h6">Descubre</h2>
+<div id="aspect_discovery_Navigation_list_discovery" class="list-group">
+<a class="list-group-item active"><span class="h5 list-group-item-heading  h5">Autor</span></a><a href="/discover?filtertype=author&filter_relational_operator=equals&filter=Aguayo+Lara%2C+Enrique+Javier" class="list-group-item ds-option">Aguayo Lara, Enrique Javier (2)</a><a href="/discover?filtertype=author&filter_relational_operator=equals&filter=Aguirre+Salas%2C+Luis+Isidro" class="list-group-item ds-option">Aguirre Salas, Luis Isidro (2)</a><a href="/discover?filtertype=author&filter_relational_operator=equals&filter=Ambrosio+Lo%CC%81pez%2C+Armando" class="list-group-item ds-option">Ambrosio López, Armando (2)</a><a href="/discover?filtertype=author&filter_relational_operator=equals&filter=Andrade+Soto%2C+Manuel+Antonio" class="list-group-item ds-option">Andrade Soto, Manuel Antonio (2)</a><a href="/discover?filtertype=author&filter_relational_operator=equals&filter=Arana+Daniel%2C+Nancy+Guadalupe" class="list-group-item ds-option">Arana Daniel, Nancy Guadalupe (2)</a><a href="/discover?filtertype=author&filter_relational_operator=equals&filter=Ara%CC%81mburo+Liza%CC%81rraga%2C+Jesu%CC%81s" class="list-group-item ds-option">Arámburo Lizárraga, Jesús (2)</a><a href="/discover?filtertype=author&filter_relational_operator=equals&filter=Bernal+Mari%CC%81n%2C+Miguel" class="list-group-item ds-option">Bernal Marín, Miguel (2)</a><a href="/discover?filtertype=author&filter_relational_operator=equals&filter=Camacho+Garci%CC%81a%2C+Auraham+Sinhue%CC%81" class="list-group-item ds-option">Camacho García, Auraham Sinhué (2)</a><a href="/search-filter?field=author&filterorder=COUNT" class="list-group-item ds-option">... m&aacute;s</a><a class="list-group-item active"><span class="h5 list-group-item-heading  h5">Materia</span></a><a href="/discover?filtertype=subject&filter_relational_operator=equals&filter=Dissertations%2C+Academic" class="list-group-item ds-option">Dissertations, Academic (1089)</a><a href="/discover?filtertype=subject&filter_relational_operator=equals&filter=INGENIER%C3%8DA+Y+TECNOLOG%C3%8DA" class="list-group-item ds-option">INGENIER&Iacute;A Y TECNOLOG&Iacute;A (959)</a><a href="/discover?filtertype=subject&filter_relational_operator=equals&filter=CIENCIAS+M%C3%89DICAS+Y+DE+LA+SALUD" class="list-group-item ds-option">CIENCIAS M&Eacute;DICAS Y DE LA SALUD (255)</a><a href="/discover?filtertype=subject&filter_relational_operator=equals&filter=CIENCIAS+SOCIALES" class="list-group-item ds-option">CIENCIAS SOCIALES (200)</a><a href="/discover?filtertype=subject&filter_relational_operator=equals&filter=BIOLOG%C3%8DA+Y+QU%C3%8DMICA" class="list-group-item ds-option">BIOLOG&Iacute;A Y QU&Iacute;MICA (174)</a><a href="/discover?filtertype=subject&filter_relational_operator=equals&filter=Neural+networks+%28Computer+science%29" class="list-group-item ds-option">Neural networks (Computer science) (33)</a><a href="/discover?filtertype=subject&filter_relational_operator=equals&filter=Mathematics" class="list-group-item ds-option">Mathematics (32)</a><a href="/discover?filtertype=subject&filter_relational_operator=equals&filter=Electric+power+systems" class="list-group-item ds-option">Electric power systems (27)</a><a href="/search-filter?field=subject&filterorder=COUNT" class="list-group-item ds-option">... m&aacute;s</a><a class="list-group-item active"><span class="h5 list-group-item-heading  h5">Fecha</span></a><a href="/discover?filtertype=dateIssued&filter_relational_operator=equals&filter=%5B2010+TO+2020%5D" class="list-group-item ds-option">2010 - 2020 (1106)</a><a href="/discover?filtertype=dateIssued&filter_relational_operator=equals&filter=%5B2000+TO+2009%5D" class="list-group-item ds-option">2000 - 2009 (442)</a><a href="/discover?filtertype=dateIssued&filter_relational_operator=equals&filter=%5B1997+TO+1999%5D" class="list-group-item ds-option">1997 - 1999 (39)</a><a class="list-group-item active"><span class="h5 list-group-item-heading  h5">Has File(s)</span></a><a href="/discover?filtertype=has_content_in_original_bundle&filter_relational_operator=equals&filter=true" class="list-group-item ds-option">Yes (1588)</a>
+</div>
+<div>
+<h2 class="ds-option-set-head h6">RSS Feeds</h2>
+<div class="ds-option-set list-group" id="ds-feed-option">
+<a class="list-group-item" href="/feed/rss_1.0/site"><img alt="feed" class="btn-xs" src="/static/icons/feed.png">RSS 1.0</a><a class="list-group-item" href="/feed/rss_2.0/site"><img alt="feed" class="btn-xs" src="/static/icons/feed.png">RSS 2.0</a><a class="list-group-item" href="/feed/atom_1.0/site"><img alt="feed" class="btn-xs" src="/static/icons/feed.png">Atom</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer>
+<div class="container">
+<div class=" col-sm-4">
+<div>
+                        Copyright&nbsp;&copy;&nbsp;2020&nbsp; CINVESTAV.
+                    </div>
+<div>
+                        Todos los derechos reservados.
+                    </div>
+</div>
+<div class=" col-sm-4">
+<div>
+                        El Repositorio CINVESTAV esta bajo la plataforma DSpace y est&aacute; gestionado por el Centro de Investigaci&oacute;n y de Estudios Avanzados del IPN
+                    </div>
+</div>
+<div class="col-sm-4 ">
+<div class="pull-right">
+                       El contenido de Repositorio CINVESTAV est&aacute; protegido por una licencia Creative Commons Reconocimiento-NoComercial-SinObra Derivada 4.0 Internacional.
+                    
+                    
+                        <a href=" http://creativecommons.org/licenses/by-nc-nd/4.0" target="_blank" title="CC"><img src="/themes/Mirage2/images/creativecommons/cc-by-nc-nd.png" alt="CC"></a>
+</div>
+</div>
+</div>
+<p>&nbsp;</p>
+</footer>
+<script type="text/javascript">
+                         if(typeof window.publication === 'undefined'){
+                            window.publication={};
+                          };
+                        window.publication.contextPath= '';window.publication.themePath= '/themes/Mirage2/';</script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='';window.DSpace.theme_path='/themes/Mirage2/';</script><script src="/themes/Mirage2/scripts/theme.js"> </script>
+</body></html>
