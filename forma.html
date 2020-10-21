@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <title>Solicitud de admisión</title>
+        <link href="forma.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div>
+                <header class="caja1">
+                    <div class="titulo"> 
+                        <img class="imgs" src="recursos/IPN.png">
+                        <div class="ttitulo">
+                            <h1 id="t1">INSTITUTO POLITÉCNICO NACIONAL</h1>
+                            <h2>Centro de Investigación en Ciencia Aplicada y Tecnología Avanzada</h2>
+                            <h2>Unidad Legaria</h2>
+                        </div>
+                        <img class="imgs" src="recursos/cicata-logo-2011-v4curvas.png">
+                    </div>
+                    <nav class="navegacion">
+                        <ul>
+                            <li>INICIO</li>
+                            <li>ESTUDIANTES</li>
+                            <li>CONÓCENOS</li>
+                            <li>SERVICIOS</li>
+                            <li>OFERTA EDUCATIVA</li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+            <div>
+            <nav  class="principal">
+                <ul>
+                <h3>SOLICITUD DE ADMISIÓN AL PROCESO DE INGRESO AL SEMESTRE A-2021</h3>
+            </ul>
+        </nav>
+        <nav  class="opciones">
+            <ul>
+                <h5>Ingrese todos los datos requeridos</h5>
+            </ul>
+            
+        </nav>
+            <form class="form1" action="datos.html" method="POST">
+                    <label for="maestria">Maestria </label>
+                    <select id="maestria" name="maestria" required>
+                        <option value="m1">Física educativa</option>
+                        <option value="m2">Matemática educativa</option>
+                        <option value="m3">Tecnología Avanzada</option>
+                    </select>
+                    <p id="datos">DATOS GENERALES</p>
+                    <div class="datosgenerales">
+                        <div class="nom">
+                        <!-- aqui probe el uso de varias cajas -->
+                           <div>
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                           </div> 
+                           <div>
+                            <label for="apellidoP">Apellido paterno</label>
+                            <input id="apellidoP" name="apellidoP" type="text" required>
+                            <br>
+                           </div>
+                           <div>
+                            <label for="apellidoM">Apellido materno</label>
+                            <input id="apellidoM" name="apellidoM" type="text" required>
+                           </div>
+
+                        </div>
+                        
+                        <div class="nacimiento">
+                            <div>
+                                <label for="fecha">Fecha de nacimiento</label>
+                                <input type="date" id="fecha" name="fecha">
+                            </div>
+                            <div>
+                                <label for="lugar">Lugar de nacimiento</label>
+                                <input type="text" id="lugar" name="lugar">
+                            </div>
+                            
+                        </div>
+
+                        <label for="celular">Número de celular</label>
+                        <input id="celular" type="text" required pattern="[0-9]{10}" name="celular">
+
+                        <label for="nacionalidad">Nacionalidad</label>
+                        <input id="nacionalidad" type="text" name="nacionalidad">
+
+                        <label for="civil">Estado civil</label>
+                        <input id="civil" name="civil" type="text">
+
+                        <label for="curp">CURP</label>
+                        <input id="curp" type="text" name="curp" required pattern="[A-Z][0-9]{18}">
+
+                        <label for="correo">Correo electrónico</label>
+                        <input id="correo" name="correo" type="text">
+
+                        <label for="skype">Cuenta de Skype</label>
+                        <input id="skype" name="skype" type="text">
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
