@@ -34,7 +34,7 @@
                 
                 <h3>SOLICITUD DE ADMISIÓN AL PROCESO DE INGRESO AL SEMESTRE A-2021</h3>
             
-        </nav>
+            </nav>
         <nav  class="opciones">
            
                 <h5>Ingrese todos los datos requeridos</h5>
@@ -46,19 +46,20 @@
         <p>
 
         </p>
-            <form class="form1" action="datos.html" method="POST">
-                    <label for="maestria">Maestria </label>
+         <form class="form1" action="datos.html" method="POST">
+             <div class="maestria">
+                 <label for="maestria">Maestria </label>
                     <select id="maestria" name="maestria" required>
-                       
                         <option value="m1">Física educativa</option>
                         <option value="m2">Matemática educativa</option>
                         <option value="m3">Tecnología Avanzada</option>
                        
                     </select>
+                </div>
                     <p>
 
                     </p>
-                    <p id="datos">DATOS GENERALES</p>
+                    <p id="datosG">DATOS GENERALES</p>
                     <div class="datosgenerales">
                         <div class="nom">
                            <!-- aqui probe el uso de varias cajas -->
@@ -79,7 +80,7 @@
                          </div> 
                             
                         
-                         <div class="nacimiento">
+                        <div class="nacimiento">
                             <div>
                                 <label for="fechaN">Fecha de nacimiento</label>
                                 <input type="date" id="fechaN" name="fechaN" required>
@@ -87,43 +88,43 @@
                                <div>
                                    <label for="lugar">Lugar de nacimiento</label>
                                    <input type="text" id="lugar" name="lugar" required>
-                                </div>
+                               </div>
+                        </div>
 
                       
-                                <div class="datos">
-                                    <div>
+                            <div class="datos">
+                                <div>
                                         <label for="celular">Número de celular</label>
                                         <input id="celular" type="text" required pattern="[0-9]{10}" name="celular">
-                                     </div>
-                                    <div>
+                                </div>
+                                <div>
                                        <label for="nacionalidad">Nacionalidad</label>
                                        <input id="nacionalidad" type="text" name="nacionalidad" required>
-                                    </div>
-                                    <div>
+                                </div>
+                                <div>
                                        <label for="civil">Estado civil</label>
                                         <input id="civil" name="civil" type="text" required>
-                                     </div>
                                 </div>
+                            </div>
                             
                             <div class="otrosdatos">
-                                 <div>
+                                <div>
                                 <label for="curp">CURP</label>
                                 <input id="curp" type="text" name="curp" required pattern="[A-Z][0-9]{18}">
-                              </div>
-                              <div>
+                                </div>
+                               <div>
                                 <label for="correo">Correo electrónico</label>
                                 <input id="correo" name="correo" type="text" required>
                                </div> 
                                <div>
                                   <label for="skype">Cuenta de Skype</label>
                                    <input id="skype" name="skype" type="text" required>
-                                 </div>
-                              </div>
+                                </div>
                             </div>
                         </div>
                      </div>  
+                     <h5>INFORMACIÓN GENERAL</h5>
                      <div class="informacion">
-                         <h5>INFORMACIÓN GENERAL</h5>
                          <div>
                              <label for="institucion">Institución donde ha realizado sus estudios profesionales</label>
                             <input type="text" id="institucion" name="institucion" required>
@@ -184,7 +185,8 @@
                             <label for="fecha">Fecha</label>
                             <input type="date" id="fecha" name="fecha">
                         </div>
-                     </div>   
+                     </div>  
+                 </div> 
                 </form>
             </body>
 </html>
