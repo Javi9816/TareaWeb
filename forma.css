@@ -1,0 +1,293 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+
+* {
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+ 
+.caja1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    font-size: 12px;
+}
+
+
+.ttitulo {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20px;
+}
+
+#t1 {
+    font-size: 20px;
+}
+
+.imgs {
+    height: 150px;
+    width: 150px;
+}
+
+nav ul { 
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+    border:3px solid rgba(104, 36, 68, 0.98);
+    background-color:rgba(104, 36, 68, 0.98);
+    height: 50px;
+    margin:0.5em;
+    
+}
+
+nav li {
+    list-style: none;
+    color:white;
+    font-size: 15px;
+}
+
+.form1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.2em;
+}
+
+.datosgenerales {
+    background-color: rgba(255, 255, 255, 0.863);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 900px;
+    border-radius: 5%;
+    border: 5px solid rgb(199, 191, 191);
+    font-size: 1.2em;  
+    
+
+}
+
+.informacion { /*Contenedor de informacion general*/
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    margin:1.2em 1.2em 1em 1em;
+    
+    justify-content: left;
+    font-size:20px;
+    padding:  200;
+    background-color: rgba(255, 255, 255, 0.863);
+    flex-direction: column;
+    width: 900px;
+    border-radius: 5%;
+    border: 5px solid rgb(199, 191, 191);
+    font-size: 1.2em; 
+    
+}
+
+
+
+.informacion div { /* Titulo en adelante*/
+    display: flex;
+    justify-content: center;
+    margin:1em;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin:1.2em 1.2em 1em 1em;
+    align-items: center;
+    font-size:20px;
+}
+
+.titulado div{
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 1em 1.2em 1.2em;
+    width: 500px;
+    font-size: 2em;
+    
+    
+}
+
+.nom {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    margin:1.2em 1.2em 1em 1em;
+    align-items: center;
+    font-size:20px;
+    padding:  100;
+}
+
+.datos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin:1.2em 1em 0 1em;
+    align-items: center;
+    font-size:20px;
+}
+
+.datos input {
+    width: 220px;
+    height: 20px;
+}
+
+.otrosdatos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin:1.2em 1.2em 1em 1em;
+    align-items: center;
+    font-size:20px;
+}
+
+.otrosdatos input {
+    width: 220px;
+    height: 20px;
+}
+
+
+#datosG {
+    color:black;
+    text-align: center;
+    font-weight: 800px;
+    background-color: rgba(255, 255, 255, 0.863);
+    border-radius: 10%;
+    width: 300px;
+    border: 5px solid rgb(199, 191, 191);
+    height: 50px;
+}
+
+#IngGral {
+    color:black;
+    text-align: center;
+    font-weight: 800px;
+    background-color: rgba(255, 255, 255, 0.863);
+    border-radius: 10%;
+    width: 300px;
+    border: 5px solid rgb(199, 191, 191);
+    height: 50px;
+}
+
+.opciones{
+    height: 35px;
+    width: 100%;
+   display: flex;
+   margin: auto;
+   align-items: center;
+   font-size: 20px;
+    color: black;
+}
+
+.maestria {
+    display: inline-flex;
+    height: 25px;
+    background-color: white;
+    font-size: medium;
+    
+}
+
+.principal{
+    height: 50px;
+    width: 100%;
+    display: flex;
+   margin: auto;
+   
+   align-items: center;
+    border:3px solid rgba(104, 36, 68, 0.98);
+    background-color:rgba(104, 36, 68, 0.98);   
+}
+
+
+.nom div input {
+    width: 220px;
+    height: 20px;
+}
+
+label {
+    margin-right: 5%;
+    font-size: 15px;
+}
+
+.nacimiento {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin:1.2em 1em 0 1em;
+    align-items: center;
+    font-size:20px;
+}
+
+
+.nacimiento div input {
+    width: 220px;
+    height: 20px;
+}
+
+
+
+/*.centrado{
+    margin-left: auto;
+    margin-right: auto;
+  }*/
+
+.centrado {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }  
+
+
+   /* #encabezado{
+        width: 320px;
+        float: left;
+        margin-top: 20px;
+        margin-left: 20px;
+
+    }*/
+
+    h3{
+
+        font-size: 1.2em; /* Javi xd*/
+        color:white;
+    }
+
+body{
+        background: url(/recursos/legaria.jpg); /*Inseta la imagen de fondo*/
+        background-size: cover;/* Carga la imagen completa, pero no la distribuye correctamente en la pantalla*/
+        background-position: center center;/*Centra la imagen en toda la pantalla*/
+        background-attachment: fixed;/*Hace que la imagen se mueva junto al scroll ocuando minimizamos o maximizamo la pantalla*/
+    
+        /*A continuacion haremos que sea compatible con diferentes navegadores*/
+       -webkit-background-size: cover;
+       -moz-background-size: cover;
+       -moz-background-size: cover;
+}
+
+
+
+h5{
+    color: white;
+    font-size: 1.1em;
+}

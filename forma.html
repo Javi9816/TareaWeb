@@ -1,0 +1,226 @@
+<!DOCTYPE html >
+
+
+<html>  
+    <head>
+        <meta charset ="UTF-8">
+        <title>Solicitud de admisión</title>
+        <link href="forma.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div>
+                <header class="caja1">
+                    <div class="titulo"> 
+                         <img class="imgs" src="recursos/IPN.png">
+                        <div class="ttitulo">
+                            <h1 id="t1">INSTITUTO POLITÉCNICO NACIONAL</h1>
+                            <h2>Centro de Investigación en Ciencia Aplicada y Tecnología Avanzada</h2>
+                            <h2>Unidad Legaria</h2>
+                        </div>
+                        <img class="imgs" src="recursos/cicata-logo-2011-v4curvas.png">
+                    </div>
+                    <nav class="navegacion">
+                        <ul>
+                            <li>INICIO</li>
+                            <li>ESTUDIANTES</li>
+                            <li>CONÓCENOS</li>
+                            <li>SERVICIOS</li>
+                            <li>OFERTA EDUCATIVA</li>
+                            <li>INVESTIGACIÓN</li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+            <div>
+            <nav  class="principal">
+                
+                <h3>SOLICITUD DE ADMISIÓN AL PROCESO DE INGRESO AL SEMESTRE A-2021</h3>
+            
+            </nav>
+        <nav  class="opciones">
+           
+                <h5>Ingrese todos los datos requeridos</h5>
+           <p>
+
+           </p>
+            
+        </nav> 
+        <p>
+
+        </p>
+         <form class="form1" action="datos.html" method="POST">
+             <div class="maestria">
+                 <label for="maestria">Maestria </label>
+                    <select id="maestria" name="maestria" required>
+                        <option value="m1">Física educativa</option>
+                        <option value="m2">Matemática educativa</option>
+                        <option value="m3">Tecnología Avanzada</option>
+                       
+                    </select>
+                </div>
+                    <br>
+                    
+                    <p id="datosG">DATOS GENERALES</p>
+                    <br>
+                    <div class="datosgenerales">
+                        <div class="nom">
+                           <!-- aqui probe el uso de varias cajas -->
+                           <div>
+                            <label for="nombre">Nombre</label>
+                            <input type=text" id="nombre" name="nombre" required>
+                           </div> 
+                           <div>
+                            <label for="apellidoP">Apellido paterno</label>
+                            <input type="text" apellidoP" name="apellidoP" type="text" required>
+                            <br>
+                           </div>
+                           <div>
+                            <label for="apellidoM">Apellido materno</label>
+                            <input type="text" id="apellidoM" name="apellidoM" type="text" required>
+                           </div>
+
+                         
+                     </div>
+                            
+                        
+                         <div class="nacimiento">
+                            <div>
+                                <label for="fechaN">Fecha de nacimiento</label>
+                                <input  date id="fechaN" name="fechaN" required>
+                            </div>
+                               <div>
+                                   <label for="lugar">Lugar de nacimiento</label>
+                                   <input  type="text" id="lugar" name="lugar" required>
+                               </div>
+                         </div>
+
+                      
+                            <div class="datos">
+                                <div>
+                                        <label for="celular">Número de celular</label>
+                                        <input id="celular" type="text" required pattern="[0-9]{10}" name="celular">
+                                </div>
+                                <div>
+                                       <label for="nacionalidad">Nacionalidad</label>
+                                       <input id="nacionalidad" type="text" name="nacionalidad" required>
+                                </div>
+                                <div>
+                                       <label for="civil">Estado civil</label>
+                                        <input id="civil" name="civil" type="text" required>
+                                </div>
+                            </div>
+                            
+                            <div class="otrosdatos">
+                                <div>
+                                <label for="curp">CURP</label>
+                                <input id="curp" type="text" name="curp" required pattern="[A-Z][0-9]{18}">
+                                </div>
+                               <div>
+                                <label for="correo">Correo electrónico</label>
+                                <input id="correo" name="correo" type="text" required>
+                               </div> 
+                               <div>
+                                  <label for="skype">Cuenta de Skype</label>
+                                   <input id="skype" name="skype" type="text" required>
+                                </div>
+                            </div>
+                         </div>
+                         <br>
+                         <p  id="IngGral"> INFORMACIÓN GENERAL  </p>
+                         <div class="informacion"> 
+                            <div>
+                          <label for="institucion">Institución donde ha realizado sus estudios profesionales</label>
+                         <input type="text" id="institucion" name="institucion" required>
+                      </div>
+                      <div class="titulado"> 
+                          <p>Titulado </p>
+                          <br>
+                          <label for="si1"> Sí</label>
+                          <input id="si1" name="si1" type="radio" value="Sí">
+                          <br>
+                          <label for="no1"> No</label>
+                          <input id="no1" name="no1" type="radio" value="No">
+
+                        </div>
+                      
+                          
+                        
+                      
+                      
+                      <div>
+                          <label for="carrera">Carrera</label>
+                          <input type="text" id="carrera" name="carrera" required>
+                      </div>
+                      <div>
+                          <label for="pais">País de la institución de procedencia</label>
+                          <input id="pais" name="pais" type="text" required>
+                      </div>
+                      <div>
+                          <label for="experiencia">Experiencia profesional</label>
+                          <textarea id="experiencia" name="experiencia" rows="10" cols="40" required></textarea>
+                      </div>
+                      <div>
+                         <label for="docente">Experiencia docente</label>
+                         <textarea id="docente" name="docente" rows="10" cols="40" required></textarea>
+                      </div>
+                      <div>
+                         <p>¿Has asistido a los cursos propedéuticos de este departamento anteriormente? De ser así, ¿en qué años?</p>
+                         
+                       
+                        
+                           
+                      
+                      <br>
+                         <div><label>Años:</label> <br></div>
+                         <br>
+                         <br>
+                         <label for="2020">2020</label>
+                         <input id="2020" name="2020" value="2020" type="checkbox">
+                         <label for="2019">2019</label>
+                         <input id="2019" name="2019" value="2019" type="checkbox">
+                         <label for="2018">2018</label>
+                         <input id="2018" name="2018" value="2018" type="checkbox">
+                         <label for="2017">2017</label>
+                         <input id="2017" name="2017" value="2017" type="checkbox">
+                         <label for="2016">2016</label>
+                         <input id="2016" name="2016" value="2016" type="checkbox">
+                         <label for="2015">2015</label>
+                         <input id="2015" name="2015" value="2015" type="checkbox">
+                      </div>
+
+                      <div class="mov">
+                         <br>
+                         <label for="motivo">Motivo por el cual desea ingresar al posgrado y a qué línea de investigación desea integrarse:</label>
+                         <br>
+                         <textarea id="motivo" name="motivo" row="10" cols="40"></textarea>
+                      </div>  
+                      <div class="archivo">
+                         <br>
+                         <label for="curriculum">Curriculum vitae</label>
+                         <input type="file" id="curriculum" name="curriculum" required>
+                      </div>
+                      <div class="fecha">
+                         <br>
+                         <label for="fecha">Fecha</label>
+                         <input type="date" id="fecha" name="fecha">
+                      </div>
+                      
+                      </div>
+                           <!---->  </div>  
+                             
+                                
+                             
+                            
+
+                          </div>  
+                             </div> 
+                            </form>
+                             </body>
+</html>
+                              
+
+               
+                              
+
+               
